@@ -1,14 +1,16 @@
-import { createContext, useContext, useState } from 'react';
+import  { createContext, useContext, useState } from 'react';
 
 const JobListingsContext = createContext();
 
-export const useJobListings = () => useContext(JobListingsContext);
+export function useJobListings() {
+    return useContext(JobListingsContext);
+}
 
-export const JobListingsProvider = ({ children }) => {
+export function JobListingsProvider({ children }) {
     const [jobListings, setJobListings] = useState([]);
 
     const addJobListing = (newJob) => {
-        setJobListings((prevJobListings) => [...prevJobListings, newJob]);
+        setJobListings((prevListings) => [...prevListings, newJob]);
     };
 
     return (
@@ -16,4 +18,4 @@ export const JobListingsProvider = ({ children }) => {
             {children}
         </JobListingsContext.Provider>
     );
-};
+}
