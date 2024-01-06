@@ -1,7 +1,7 @@
 # React + Vite
 # Job Portal  Assessment Application
 
-This is the repository for the Acunor Assessment Application, a responsive web application built using React, Tailwind CSS, React Router DOM, Vite, offering various functionalities.
+This is the repository for the Job Portal Assessment Application, a responsive web application built using React, Tailwind CSS, React Router DOM, Vite, offering various functionalities.
 
 ## Demo
 
